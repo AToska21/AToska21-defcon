@@ -51,7 +51,7 @@ class Defcon(commands.Cog):
         member = ctx.message.author
         level = await self.conf.guild(guild).defcon()
         if level == await self.conf.max_defcon():
-            await ctx.send("We are already maximum DEFCON! Oh no!")
+            await ctx.send("We are already maximum DEFCON! We're screwed.")
             return
         else:
             await self.conf.guild(guild).defcon.set(level - 1)
@@ -67,7 +67,7 @@ class Defcon(commands.Cog):
         member = ctx.message.author
         level = await self.conf.guild(guild).defcon()
         if level == await self.conf.min_defcon():
-            await ctx.send("We are already at minimum DEFCON! Relax!")
+            await ctx.send("We are already at minimum DEFCON! Chill, sheesh...")
             return
         else:
             await self.conf.guild(guild).defcon.set(level + 1)
@@ -86,8 +86,7 @@ class Defcon(commands.Cog):
             await self.conf.guild(guild).authority.set(member.display_name)
             await self._post_defcon(ctx, guild, channel)
         else:
-            await ctx.send("Not a valid DEFCON level. Haven't "
-                           "you seen War Games?")
+            await ctx.send("Not a valid DEFCON level. iDot.")
 
     @commands.guild_only()
     @commands.command(name="defconchan")
@@ -165,6 +164,13 @@ class Defcon(commands.Cog):
                             "all-clear is given")
         else:
             # Better error handling?
+            color = 0xffffff
+            thumbnail_url = 'https://i.imgur.com/NVB1AFA.gif'
+            author = "What the hell did you do?"
+            subtitle = "You broke the cog."
+            instructions = (" - wtf man\n"
+                            " - not cool\n"
+                            " - stop breaking the bot\n")
             return
 
         embed = discord.Embed(title="\u2063", color=color)
