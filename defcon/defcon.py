@@ -123,43 +123,42 @@ class Defcon(commands.Cog):
             color = 0x0080ff
             thumbnail_url = 'https://i.imgur.com/ynitQlf.gif'
             author = "This server is at DEFCON LEVEL {}.".format(level)
-            subtitle = ("No known threats to your self esteem "
-                        "exist at this time.")
-            instructions = ("- Partipaction in online games is encouraged\n"
-                            "- Remain vigilant of insider threats\n"
+            subtitle = 'Servers are up!'
+            instructions = ("- All servers are up\n"
+                            "- Remain vigilant of rulebreakers\n"
                             "- Report all suspicious activity")
         elif level == 4:
             color = 0x00ff00
             thumbnail_url = 'https://i.imgur.com/sRhQekI.gif'
             author = "This server is at DEFCON LEVEL {}.".format(level)
-            subtitle = 'Trace amounts of sodium have been detected.'
-            instructions = ("- Inhale deeply through your nose and "
-                            "count to 5\n"
-                            "- Take short breaks between games\n"
+            subtitle = 'Servers are down!'
+            instructions = ("- Some servers are down but "
+                            "do not panic\n"
+                            "- Keep reporting rulebreakers\n"
                             "- Do not encourage trolls")
         elif level == 3:
             color = 0xffff00
             thumbnail_url = 'https://i.imgur.com/xY9SkkA.gif'
             author = "This server is at DEFCON LEVEL {}.".format(level)
-            subtitle = 'Sodium levels may exceed OSHA exposure limits.'
-            instructions = ("- Use extreme caution when playing ranked games\n"
-                            "- Log off non-essential communication channels\n"
+            subtitle = 'oh no...'
+            instructions = ("- A minecraft server has gone down\n"
+                            "- Rulebreakers may be more common\n"
                             "- Put on your big boy pants")
         elif level == 2:
             color = 0xff0000
             thumbnail_url = 'https://i.imgur.com/cSzezRE.gif'
             author = "This server is at DEFCON LEVEL {}.".format(level)
-            subtitle = 'Sodium levels are approaching critical mass'
-            instructions = ("- Avoid ranked game modes at all costs\n"
-                            "- Mute all hostile voice channels\n"
+            subtitle = 'this is BAD.'
+            instructions = ("- Serveral minecraft servers are down\n"
+                            "- Avoid general at all costs\n"
                             "- Queue up some relaxing jazz music")
         elif level == 1:
             color = 0xffffff
             thumbnail_url = 'https://i.imgur.com/NVB1AFA.gif'
             author = "This server is at DEFCON LEVEL {}.".format(level)
-            subtitle = 'Total destruction is IMMINENT.'
-            instructions = ("- Do not participate in any online games\n"
-                            "- Log off all social media immediately\n"
+            subtitle = 'nananananananananana we're completely fucked'
+            instructions = ("- Everything is offline\n"
+                            "- Avoid the entire server\n"
                             "- Take shelter outdoors until the "
                             "all-clear is given")
         else:
