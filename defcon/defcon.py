@@ -156,7 +156,7 @@ class Defcon(commands.Cog):
             color = 0xffffff
             thumbnail_url = 'https://i.imgur.com/NVB1AFA.gif'
             author = "This server is at DEFCON LEVEL {}.".format(level)
-            subtitle = 'nananananananananana we're completely fucked'
+            subtitle = 'nananananananananana we\'re completely fucked'
             instructions = ("- Everything is offline\n"
                             "- Avoid the entire server\n"
                             "- Take shelter outdoors until the "
